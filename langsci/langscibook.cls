@@ -1707,7 +1707,7 @@ width=.8\textwidth
 %     \\[-1\baselineskip]
 %     \vspace*{-2\baselineskip}
   \renewcommand{\chapterheadstartvskip}{}
-  {\LARGE \noindent \hspace*{-.7cm} Chapter \thechapter}\\ %there must be a better way to undo this length than a hard value
+  {\LARGE \noindent \hspace*{-.7cm} Capítulo \thechapter}\\ %there must be a better way to undo this length than a hard value
   \bigskip  
   \@title}}
    
@@ -1732,7 +1732,7 @@ width=.8\textwidth
   \renewcommand{\newlineCover}{\\} 
   \\[-1\baselineskip]
 % \vspace*{-2\baselineskip}
-  \noindent{\LARGE Chapter \thechapter}\\
+  \noindent{\LARGE Capítulo \thechapter}\\
   \bigskip  
   \@title}}
   
