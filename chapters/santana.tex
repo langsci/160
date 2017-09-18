@@ -83,13 +83,127 @@ Mas voltemo-nos aos dados infantis do português. O primeiro fato que salta aos 
 As Figuras \ref{fig:santana_1} e \ref{fig:santana_2} apresentam a distribuição da produção dos padrões acentuais de nomes por duas crianças brasileiras entre 1;3 e 2;0, com e sem \textit{babytalk}.\is{babytalk@\textit{babytalk}} Foram consideradas somente palavras produzidas mais de 8 vezes neste período. Como se pode observar nas Figuras \ref{fig:santana_1} e \ref{fig:santana_2}, a criança desde cedo produz troqueus\is{padrão!trocaico} e a quantidade de palavras \textit{babytalk}\is{babytalk@\textit{babytalk}} com este padrão é muito pequena (30 \textit{tokens}).\footnote{A discussão sobre se se deve analisar \textit{tokens} ou \textit{types} ainda é muito viva na literatura. Cf. \citealt{vigario_etal2010}.} Percebe-se que, nos primeiros meses, palavras alvo do tipo SW foram produzidas como monossílabos (e.g. `bola' como \ipa{[bo]}). Há uns poucos casos de mudança para WS (água como [a\pstr a]) e ainda menos para padrão WSW (`bola' como \ipa{[@\pstr bOl5]}).
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/santanafig1}
+% % \includegraphics[width=0.5\textwidth]{figures/santanafig1}
+\begin{tikzpicture}
+ \begin{axis}[legend pos=outer north east,symbolic x coords={1;3,1;4,1;5,1;6,1;7,1;8,1;9,1;10,1;11,2;0},ytick={0,10,...,60},xtick=data,xlabel=idade,ylabel=tokens,title=nomes SW (291 tokens) --- com babytalk]
+  \addplot[black,dotted,mark=*,mark options={scale=1,fill=black!80}] table [x=RL, y=sw] {
+  RL	sw
+  1;3	5
+  1;4	21
+  1;5	11
+  1;6	42
+  1;7	17
+  1;8	58
+  1;9	25
+  1;10	1
+  1;11	11
+  2;0	36
+};
+  \addplot[black,solid,mark=square*,mark options={scale=1,fill=black!80}] table[x=RL, y=ws] {
+RL		ws
+1;3		0
+1;4		3
+1;5		2
+1;6		2
+1;7		0
+1;8		2
+1;9		0
+1;10		0
+1;11		4
+2;0		0
+  };
+  \addplot[black,dashed,mark=triangle*,mark options={scale=1,fill=black!80}] table[x=RL, y=s] {
+ RL			s
+1;3			4
+1;4			9
+1;5			14
+1;6			7
+1;7			5
+1;8			3
+1;9			13
+1;10			0
+1;11			3
+2;0			2
+  };
+  \addplot[black, dashdotdotted,mark=diamond*,mark options={scale=1,fill=black!80}] table[x=RL, y=wsw] {
+RL				wsw
+1;3				0
+1;4				0
+1;5				0
+1;6				0
+1;7				0
+1;8				0
+1;9				0
+1;10				0
+1;11				0
+2;0				0  
+  };
+  \legend{sw,ws,s,wsw};
+ \end{axis}
+\end{tikzpicture}
 \caption{padrões prosódicos produzidos para nomes SW com palavras babytalk}
 \label{fig:santana_1}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/santanafig2}
+% % \includegraphics[width=0.5\textwidth]{figures/santanafig2}
+\begin{tikzpicture}
+ \begin{axis}[legend pos=outer north east,symbolic x coords={1;3,1;4,1;5,1;6,1;7,1;8,1;9,1;10,1;11,2;0},ytick={0,10,...,60},xtick=data,xlabel=idade,ylabel=tokens,title=nomes SW (261 tokens) --- sem babytalk]
+  \addplot[black,dotted,mark=*,mark options={scale=1,fill=black!80}] table [x=RL, y=sw] {
+RL	sw
+1;3	0
+1;4	21
+1;5	4
+1;6	25
+1;7	17
+1;8	58
+1;9	25
+1;10	1
+1;11	10
+2;0	35
+};
+  \addplot[black,solid,mark=square*,mark options={scale=1,fill=black!80}] table[x=RL, y=ws] {
+RL		ws
+1;3		0
+1;4		3
+1;5		1
+1;6		1
+1;7		0
+1;8		2
+1;9		0
+1;10		0
+1;11		4
+2;0		0
+  };
+  \addplot[black,dashed,mark=triangle*,mark options={scale=1,fill=black!80}] table[x=RL, y=s] {
+RL			s
+1;3			0
+1;4			9
+1;5			12
+1;6			7
+1;7			5
+1;8			3
+1;9			13
+1;10			0
+1;11			3
+2;0			2
+  };
+  \addplot[black, dashdotdotted,mark=diamond*,mark options={scale=1,fill=black!80}] table[x=RL, y=wsw] {
+RL				wsw
+1;3				0
+1;4				0
+1;5				0
+1;6				0
+1;7				0
+1;8				0
+1;9				0
+1;10				0
+1;11				0
+2;0				0 
+  };
+  \legend{sw,ws,s,wsw};
+ \end{axis}
+\end{tikzpicture}
 \caption{padrões prosódicos produzidos para nomes SW sem palavras babytalk}
 \label{fig:santana_2}
 \end{figure}
@@ -97,13 +211,127 @@ As Figuras \ref{fig:santana_1} e \ref{fig:santana_2} apresentam a distribuição
 As Figuras \ref{fig:santana_3} e \ref{fig:santana_4} apresentam a produção de padrões WS. O primeiro fato a se notar é a grande quantidade de palavras babytalk\is{babytalk@\textit{babytalk}} com esse padrão (somente 34 \textit{tokens} não eram \textit{babytalk}) (como `dodói' \ipa{[do\pstr dOj]}). Percebe-se algumas mudanças para um padrão SW (`gravador' como \ipa{[ga\pstr vado]}) em um período posterior ao da mudança de palavras SW para WS. A produção de iambos\is{padrão!iâmbico} como monossílabos também ocorre (WS produzidos como S) (`Miguel' como \ipa{[ge]}), principalmente em palavras do léxico adulto, e persiste por mais tempo.
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/santanafig3}
+% % \includegraphics[width=0.5\textwidth]{figures/santanafig3}
+\begin{tikzpicture}
+ \begin{axis}[legend pos=outer north east,symbolic x coords={1;3,1;4,1;5,1;6,1;7,1;8,1;9,1;10,1;11,2;0},ytick={0,10,...,60},xtick=data,xlabel=idade,ylabel=tokens,title=nomes WS (274 tokens) --- com babytalk]
+  \addplot[black,dotted,mark=*,mark options={scale=1,fill=black!80}] table [x=RL, y=sw] {
+RL	sw
+1;3	0
+1;4	1
+1;5	0
+1;6	3
+1;7	2
+1;8	0
+1;9	2
+1;10	0
+1;11	0
+2;0	0
+};
+  \addplot[black,solid,mark=square*,mark options={scale=1,fill=black!80}] table[x=RL, y=ws] {
+RL		ws
+1;3		3
+1;4		38
+1;5		29
+1;6		39
+1;7		24
+1;8		33
+1;9		26
+1;10		3
+1;11		16
+2;0		45
+  };
+  \addplot[black,dashed,mark=triangle*,mark options={scale=1,fill=black!80}] table[x=RL, y=s] {
+RL			s
+1;3			0
+1;4			2
+1;5			1
+1;6			1
+1;7			0
+1;8			0
+1;9			1
+1;10			0
+1;11			3
+2;0			1
+  };
+  \addplot[black, dashdotdotted,mark=diamond*,mark options={scale=1,fill=black!80}] table[x=RL, y=wsw] {
+RL				wsw
+1;3				0
+1;4				0
+1;5				0
+1;6				0
+1;7				0
+1;8				0
+1;9				0
+1;10				0
+1;11				0
+2;0				1
+  };
+  \legend{sw,ws,s,wsw};
+ \end{axis}
+\end{tikzpicture}
 \caption{padrões prosódicos produzidos para nomes WS com palavras babytalk}
 \label{fig:santana_3}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/santanafig4}
+% % \includegraphics[width=0.5\textwidth]{figures/santanafig4}
+\begin{tikzpicture}
+ \begin{axis}[legend pos=outer north east,symbolic x coords={1;3,1;4,1;5,1;6,1;7,1;8,1;9,1;10,1;11,2;0},ytick={0,2,...,60},xtick=data,xlabel=idade,ylabel=tokens,title=nomes WS (21 tokens) --- sem babytalk]
+  \addplot[black,dotted,mark=*,mark options={scale=1,fill=black!80}] table [x=RL, y=sw] {
+RL	sw
+1;3	0
+1;4	0
+1;5	0
+1;6	0
+1;7	0
+1;8	0
+1;9	0
+1;10	0
+1;11	0
+2;0	0
+};
+  \addplot[black,solid,mark=square*,mark options={scale=1,fill=black!80}] table[x=RL, y=ws] {
+RL		ws
+1;3		0
+1;4		0
+1;5		0
+1;6		1
+1;7		4
+1;8		5
+1;9		1
+1;10		0
+1;11		2
+2;0		3
+  };
+  \addplot[black,dashed,mark=triangle*,mark options={scale=1,fill=black!80}] table[x=RL, y=s] {
+RL			s
+1;3			0
+1;4			0
+1;5			1
+1;6			1
+1;7			0
+1;8			0
+1;9			1
+1;10			0
+1;11			2
+2;0			0
+  };
+  \addplot[black, dashdotdotted,mark=diamond*,mark options={scale=1,fill=black!80}] table[x=RL, y=wsw] {
+RL				wsw
+1;3				0
+1;4				0
+1;5				0
+1;6				0
+1;7				0
+1;8				0
+1;9				0
+1;10				0
+1;11				0
+2;0				0
+  };
+  \legend{sw,ws,s,wsw};
+ \end{axis}
+\end{tikzpicture}
 \caption{padrões prosódicos produzidos para nomes WS sem palavras babytalk}
 \label{fig:santana_4}
 \end{figure}
@@ -111,20 +339,191 @@ As Figuras \ref{fig:santana_3} e \ref{fig:santana_4} apresentam a produção de 
 As Figuras \ref{fig:santana_5} e \ref{fig:santana_6} apresentam a produção de monossílabos. Como se pode perceber, são modificados para o padrão WS (`pé'\is{pé} como \ipa{[ti\pstr pa]}). Finalmente, o Figura \ref{fig:santana_7} traz as palavras com padrão WSW – não foi encontrada nenhuma palavra \textit{babytalk}\is{babytalk@\textit{babytalk}} nos dados. Embora trocaicas,\is{padrão!trocaico} estas palavras são analisadas separadamente porque, a depender de qual sílaba átona\is{sílaba!sílaba átona} a criança apaga, ela pode criar um padrão iâmbico\is{padrão!iâmbico} ou manter o padrão trocaico\is{padrão!trocaico} (mas com a palavra dissílaba).
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/santanafig5}
+% % \includegraphics[width=0.5\textwidth]{figures/santanafig5} 
 \caption{padrões prosódicos produzidos para nomes S com palavras babytalk}
+\begin{tikzpicture}
+ \begin{axis}[legend pos=outer north east,symbolic x coords={1;3,1;4,1;5,1;6,1;7,1;8,1;9,1;10,1;11,2;0},ytick={0,2,...,60},xtick=data,xlabel=idade,ylabel=tokens,title=nomes S (88 tokens) --- com babytalk]
+  \addplot[black,dotted,mark=*,mark options={scale=1,fill=black!80}] table [x=RL, y=sw] {
+RL	sw
+1;3	0
+1;4	0
+1;5	0
+1;6	0
+1;7	0
+1;8	0
+1;9	0
+1;10	0
+1;11	0
+2;0	0
+};
+  \addplot[black,solid,mark=square*,mark options={scale=1,fill=black!80}] table[x=RL, y=ws] {
+RL		ws
+1;3		0
+1;4		0
+1;5		3
+1;6		0
+1;7		4
+1;8		0
+1;9		0
+1;10		0
+1;11		0
+2;0		0
+  };
+  \addplot[black,dashed,mark=triangle*,mark options={scale=1,fill=black!80}] table[x=RL, y=s] {
+RL			s
+1;3			0
+1;4			11
+1;5			10
+1;6			9
+1;7			10
+1;8			2
+1;9			4
+1;10			4
+1;11			9
+2;0			22
+  };
+  \addplot[black, dashdotdotted,mark=diamond*,mark options={scale=1,fill=black!80}] table[x=RL, y=wsw] {
+RL				wsw
+1;3				0
+1;4				0
+1;5				0
+1;6				0
+1;7				0
+1;8				0
+1;9				0
+1;10				0
+1;11				0
+2;0				0
+  };
+  \legend{sw,ws,s,wsw};
+ \end{axis}
+\end{tikzpicture}
 \label{fig:santana_5}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/santanafig6}
+% % \includegraphics[width=0.5\textwidth]{figures/santanafig6}
+\begin{tikzpicture}
+ \begin{axis}[legend pos=outer north east,symbolic x coords={1;3,1;4,1;5,1;6,1;7,1;8,1;9,1;10,1;11,2;0},ytick={0,2,...,60},xtick=data,xlabel=idade,ylabel=tokens,title=nomes S (34 tokens) --- sem babytalk]
+  \addplot[black,dotted,mark=*,mark options={scale=1,fill=black!80}] table [x=RL, y=sw] {
+RL	sw
+1;3	0
+1;4	0
+1;5	0
+1;6	0
+1;7	0
+1;8	0
+1;9	0
+1;10	0
+1;11	0
+2;0	0
+};
+  \addplot[black,solid,mark=square*,mark options={scale=1,fill=black!80}] table[x=RL, y=ws] {
+RL		ws
+1;3		0
+1;4		0
+1;5		2
+1;6		0
+1;7		4
+1;8		0
+1;9		0
+1;10		0
+1;11		0
+2;0		0
+  };
+  \addplot[black,dashed,mark=triangle*,mark options={scale=1,fill=black!80}] table[x=RL, y=s] {
+RL			s
+1;3			0
+1;4			6
+1;5			3
+1;6			5
+1;7			8
+1;8			1
+1;9			0
+1;10			1
+1;11			0
+2;0			4
+  };
+  \addplot[black, dashdotdotted,mark=diamond*,mark options={scale=1,fill=black!80}] table[x=RL, y=wsw] {
+RL				wsw
+1;3				0
+1;4				0
+1;5				0
+1;6				0
+1;7				0
+1;8				0
+1;9				0
+1;10				0
+1;11				0
+2;0				0
+  };
+  \legend{sw,ws,s,wsw};
+ \end{axis}
+\end{tikzpicture}
 \caption{padrões prosódicos produzidos para nomes S sem palavras babytalk}
 \label{fig:santana_6}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.5\textwidth]{figures/santanafig7}
+% % \includegraphics[width=0.5\textwidth]{figures/santanafig7} 
 \caption{padrões prosódicos produzidos para nomes WSW sem palavras babytalk}
+\begin{tikzpicture}
+ \begin{axis}[legend pos=outer north east,symbolic x coords={1;3,1;4,1;5,1;6,1;7,1;8,1;9,1;10,1;11,2;0},ytick={0,2,...,60},xtick=data,xlabel=idade,ylabel=tokens,title=nomes WSW (158 tokens) --- sem babytalk]
+  \addplot[black,dotted,mark=*,mark options={scale=1,fill=black!80}] table [x=RL, y=sw] {
+RL	sw
+1;3	1
+1;4	0
+1;5	0
+1;6	14
+1;7	1
+1;8	1
+1;9	7
+1;10	0
+1;11	0
+2;0	3
+};
+  \addplot[black,solid,mark=square*,mark options={scale=1,fill=black!80}] table[x=RL, y=ws] {
+RL		ws
+1;3		9
+1;4		2
+1;5		4
+1;6		7
+1;7		0
+1;8		4
+1;9		2
+1;10		0
+1;11		0
+2;0		2
+  };
+  \addplot[black,dashed,mark=triangle*,mark options={scale=1,fill=black!80}] table[x=RL, y=s] {
+RL			s
+1;3			0
+1;4			1
+1;5			1
+1;6			7
+1;7			1
+1;8			1
+1;9			2
+1;10			0
+1;11			0
+2;0			0
+  };
+  \addplot[black, dashdotdotted,mark=diamond*,mark options={scale=1,fill=black!80}] table[x=RL, y=wsw] {
+RL				wsw
+1;3				0
+1;4				0
+1;5				1
+1;6				19
+1;7				3
+1;8				16
+1;9				5
+1;10				3
+1;11				17
+2;0				24
+  };
+  \legend{sw,ws,s,wsw};
+ \end{axis}
+\end{tikzpicture}
 \label{fig:santana_7}
 \end{figure}
 
