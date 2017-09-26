@@ -1041,17 +1041,18 @@ http://creativecommons.org/licenses/by-nd/4.0/
 ISBN: & 
 \IfStrEq{\lsISBNdigital}{000-0-000000-00-0} 
 {\color{red}no digital ISBN}
-{\lsISBNdigital}
+{\lsISBNdigital~(digital)}
 \\
 % &
 % \IfStrEq{\lsISBNhardcover}{000-0-000000-00-0} 
 % {\color{red}no hardcover ISBN}
 % {\lsISBNhardcover~(Hardcover)}
-% \\&
-% \IfStrEq{\lsISBNsoftcover}{000-0-000000-00-0} 
-% {\color{red}no softcover ISBN}
-% {\lsISBNsoftcover~(Softcover)}
 % \\
+&
+\IfStrEq{\lsISBNsoftcover}{000-0-000000-00-0} 
+{\color{red}no softcover ISBN}
+{\lsISBNsoftcover~(softcover)}
+\\
 %       & \lsISBNhardcover~(Hardcover)\\
 %       & \lsISBNsoftcover~(Softcover)\\
 %       & \lsISBNsoftcoverus~(Softcover US)\\
